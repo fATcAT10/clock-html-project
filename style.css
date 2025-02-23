@@ -4,4 +4,38 @@
     width:40vw;
     background:url(Resources/clock.png) no-repeat;
     background-size:100%;
+    border: 1px black solid;
+    position: relative;
+}
+#hour,#minute,#second{
+    position:absolute;
+    background:black;
+    border-radius:10px;
+}
+#hour{
+    height: 31%;
+    width: 3.6%;
+    border: black 1px solid;
+    top: 29%;
+    left: 49.4%;
+    opacity: 0.3;
+    display: none;
+}
+#minute{
+    height: 39%;
+    width: 1.6%;
+    border: black 1px solid;
+    top: 24%;
+    left: 50.4%;
+    opacity: 0.2;
+    display: none;
+}
+#second{
+    height: 47%;
+    width: 0.6%;
+    border: black 1px solid;
+    top: 19%;
+    left: 50.9%;
+    opacity: 0.1;
+    display: none;
 }
