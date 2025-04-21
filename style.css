@@ -1,41 +1,46 @@
+/* #,.,etc are called selectors
+# is used for id
+.is used for class
+there are more */
 #clockContainer{
     margin:auto;
+    /* vw mean width of viewport */
     height:40vw;
     width:40vw;
+    /* no-repeat ensures the image appears only once and not again and again to fill the viewport */
     background:url(Resources/clock.png) no-repeat;
+    /* % is used to calculate how much percent of parent view should be occupied
+    it is used for responsive design */
     background-size:100%;
-    border: 1px black solid;
     position: relative;
 }
 #hour,#minute,#second{
     position:absolute;
-    background:black;
-    border-radius:10px;
+    border-radius:9px;
 }
 #hour{
     height: 31%;
     width: 3.6%;
-    border: black 1px solid;
     top: 29%;
     left: 49.4%;
-    opacity: 0.3;
-    display: none;
+    opacity: 0.7;
+    background-color: lightgreen;
+    transform-origin:50% calc(74.5%);
 }
 #minute{
     height: 39%;
     width: 1.6%;
-    border: black 1px solid;
     top: 24%;
     left: 50.4%;
-    opacity: 0.2;
-    display: none;
+    opacity: 0.8;
+    background-color: lightgrey;
+    transform-origin:50% calc(71.8%);
 }
 #second{
     height: 47%;
     width: 0.6%;
-    border: black 1px solid;
     top: 19%;
     left: 50.9%;
-    opacity: 0.1;
-    display: none;
+    background-color: lightpink;
+    transform-origin:50% calc(70%);
 }
